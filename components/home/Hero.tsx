@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <div className="h-[80vh] relative">
+    <div className="h-[90vh] relative">
       {/* Image Layer */}
       <div className="absolute inset-0">
         <Image
