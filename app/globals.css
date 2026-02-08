@@ -5,10 +5,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background); */
+  --color-background: #09090b;
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-grotesk: var(--font-space-grotesk);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -33,7 +35,8 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
+  /* --color-primary: var(--primary); */
+  --color-primary: #a855f7;
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -122,5 +125,16 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .bg-primary-gradient {
+    @apply hover:bg-primary;
+    background: linear-gradient(to right, #ae58f9 0%, #db79fb 100%);
+  }
+  .text-primary-gradient {
+    background: linear-gradient(to right, #ae58f9 0%, #db79fb 100%);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* makes the text show the gradient */
+    background-clip: text; /* standard */
+    color: transparent; /* fallback */
   }
 }
