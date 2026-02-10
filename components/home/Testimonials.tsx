@@ -42,22 +42,22 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="min-h-[50vh] flex flex-col items-center  gap-10 mt-10">
+    <div className="min-h-[50vh] flex flex-col items-center  gap-10 lg:mt-10">
       <div className="flex items-center gap-2 border border-primary/50 bg-primary/7 text-primary px-3 py-1.5 rounded-full text-sm shadow-xs shadow-primary/20">
         <Users size={15} />
         <span>Testimonials</span>
       </div>
       <div className="flex flex-col items-center gap-5 text-center">
-        <h2 className="text-5xl  w-3/4 font-bold leading-normal">
+        <h2 className="lg:text-5xl text-3xl  lg:w-3/4 font-bold leading-normal">
           Loved by Event Organizers{" "}
           <span className="text-primary-gradient">Worldwide</span>
         </h2>
-        <p className="text-gray-400">
+        <p className="text-gray-400 leading-normal">
           Join thousands of event professionals who are building faster and
           smarter with AboutBlank
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="lg:grid flex flex-col grid-cols-3 gap-5">
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.name} {...testimonial} />
         ))}

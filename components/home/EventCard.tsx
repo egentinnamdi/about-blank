@@ -12,7 +12,7 @@ export default function EventCard({
   details: { label: string; value: string }[];
 }) {
   return (
-    <div className="w-80 mr-10 min-h-[50vh] rounded-2xl border relative border-white/10  flex-1  ">
+    <div className="lg:w-80 mr-10 min-h-[50vh] rounded-2xl border relative border-white/10  flex-1  ">
       <div className="h-3/5 ">
         <Image
           src={`/img/${image}`}

@@ -27,7 +27,7 @@ export default function Hero() {
           <Sparkles size={15} className="text-primary" />
           <span>Commission-Free Ticketing</span>
         </div>
-        <h2 className="font-black flex flex-col text-8xl gap-2 items-center">
+        <h2 className="font-black flex flex-col lg:text-8xl text-3xl gap-2 items-center">
           <span>Built to Empower,</span>
           <TypeAnimation
             sequence={[

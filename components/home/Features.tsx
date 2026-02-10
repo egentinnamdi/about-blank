@@ -30,18 +30,20 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="min-h-[50vh] flex gap-10 items-center flex-col ">
-      <h2 className="text-5xl font-semibold">Everything you need to scale</h2>
-      <p className="text-gray-400 ">
+    <div className="min-h-[50vh] flex lg:gap-10 gap-7 items-center flex-col ">
+      <h2 className="lg:text-5xl text-3xl lg:text-left text-center leading-normal font-semibold">
+        Everything you need to scale
+      </h2>
+      <p className="text-gray-400 lg:text-left leading-normal text-center">
         Operate like a pro with automated tickets, secure payments, and realtime
         analytics.
       </p>
-      <div className="grid grid-cols-4 gap-7 grid-rows-2 flex-1">
+      <div className="lg:grid flex flex-col grid-cols-4 gap-7 grid-rows-2 flex-1">
         {features.map((feature, index) => (
           <div
             className={cn(
               "border rounded-2xl gap-2 border-white/5 flex flex-col shadow-2xl/50 shadow-primary/15  p-5 bg-white/2 hover:border-primary/50 hover:shadow-md/50 hover:shadow-primary/50 hover:-translate-y-3 transition-all duration-700 delay-200",
-              index === 0 && "row-span-2 col-span-2 px-10",
+              index === 0 && "row-span-2 col-span-2 lg:px-10",
             )}
             key={feature.title}
           >

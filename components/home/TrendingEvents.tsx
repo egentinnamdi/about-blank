@@ -1,6 +1,3 @@
-"use client";
-import { motion } from "motion/react";
-import Marquee from "react-fast-marquee";
 import EventCard from "./EventCard";
 
 const events = [
@@ -66,26 +63,20 @@ const events = [
   },
 ];
 
-export default function UpcomingEvents() {
+export default function TrendingEvents() {
   return (
-    <div className="min-h-[70vh]  flex gap-12 items-center  flex-col lg:mt-10 ">
-      <h2 className="lg:text-5xl text-4xl font-semibold lg:text-left text-center leading-normal">
-        Upcoming <span className="text-primary-gradient">Events</span> Around
-        You
-      </h2>
-      <Marquee
-        className=" flex-1 "
-        speed={60}
-        direction="left"
-        gradient={false}
-        // pauseOnHover={true}
-      >
-        <div className="flex">
-          {events.map((event) => (
-            <EventCard key={event.title} {...event} />
-          ))}
-        </div>
-      </Marquee>
+    <div className="min-h-[50vh] flex gap-10 flex-col mt-10">
+      <div className="space-y-3">
+        <h2 className="text-4xl font-bold ">Trending Events</h2>
+        <span className="text-gray-400">
+          Discover what is happening this week
+        </span>
+      </div>
+      <div className="flex-1 bg-orange- lg:grid grid-cols-4  gap-5">
+        {events.map((event) => (
+          <EventCard key={event.title} {...event} />
+        ))}
+      </div>
     </div>
   );
 }

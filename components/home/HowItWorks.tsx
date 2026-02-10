@@ -15,9 +15,9 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="min-h-[50vh] flex gap-5">
-      <div className="p-10 w-2/5 pl-20 items-center flex flex-col gap-7">
-        <h2 className="text-6xl font-bold ">
+    <div className="min-h-[50vh] flex flex-col gap-10 lg:gap-5">
+      <div className="lg:p-10 px-5 lg:w-2/5 lg:pl-20 items-center flex flex-col gap-7">
+        <h2 className="lg:text-6xl text-4xl font-bold ">
           <span className="text-primary-gradient leading-normal">
             Launch in{" "}
           </span>
@@ -27,7 +27,7 @@ export default function HowItWorks() {
           About Blank keep setup simple and fast while giving you
           enterprise-grade control
         </p>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5  ">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col gap-2">
               <h3 className="text-lg text-primary-gradient font-bold">
@@ -38,8 +38,8 @@ export default function HowItWorks() {
           ))}
         </div>
       </div>
-      <div className="w-3/4 flex-1 grid place-items-center">
-        <div className="border rounded-2xl grid grid-cols-2 grid-rows-3 gap-5 border-white/5  p-8 bg-white/2 shadow-2xl/70 shadow-primary/40 size-3/4">
+      <div className="lg:w-3/4 flex-1 grid place-items-center">
+        <div className="border rounded-2xl lg:grid flex flex-col grid-cols-2 grid-rows-3 gap-5 border-white/5  p-8 bg-white/2 shadow-2xl/70 shadow-primary/40 lg:size-3/4">
           <div className="border border-white/5 flex text-xs gap-0.5 text-gray-400 flex-col justify-center  p-5 bg-background rounded-2xl">
             <span>Launch readiness</span>
             <span className="text-white text-2xl font-medium">92%</span>

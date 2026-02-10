@@ -30,7 +30,7 @@ export default function TestimonialCard({
         <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
           <User className="w-6 h-6 text-primary" />
         </div>
-        <div className="ml-3">
+        <div className="ml-3 flex flex-col gap-0.5">
           <p className=" font-medium">{name}</p>
           <p className="text-gray-400  text-xs">{position}</p>
         </div>
