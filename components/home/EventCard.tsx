@@ -23,7 +23,7 @@ export default function EventCard({
           loading="eager"
         />
       </div>
-      <div className="h-2/5 flex flex-col justify-around p-5 backdrop-blur-xs bg-background/20  w-full rounded-b-2xl">
+      <div className="h-2/5 flex flex-col justify-evenly p-5 backdrop-blur-xs bg-background/20  w-full rounded-b-2xl">
         <span className="text-sm text-gray-400">{location}</span>
         <h3 className="text-2xl text-primary-gradient font-bold">{title}</h3>
         <div>
