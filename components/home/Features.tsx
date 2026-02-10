@@ -40,7 +40,7 @@ export default function Features() {
         {features.map((feature, index) => (
           <div
             className={cn(
-              "border rounded-2xl gap-2 border-white/5 flex flex-col shadow-2xl/50 shadow-primary/15  p-5 bg-white/2",
+              "border rounded-2xl gap-2 border-white/5 flex flex-col shadow-2xl/50 shadow-primary/15  p-5 bg-white/2 hover:border-primary/50 hover:shadow-md/50 hover:shadow-primary/50 hover:-translate-y-3 transition-all duration-700 delay-200",
               index === 0 && "row-span-2 col-span-2 px-10",
             )}
             key={feature.title}
