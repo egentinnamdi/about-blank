@@ -130,6 +130,20 @@
     @apply hover:bg-primary;
     background: linear-gradient(to right, #ae58f9 0%, #db79fb 100%);
   }
+  .bg-radial-gradient {
+    background:
+      radial-gradient(
+        600px circle at left center,
+        rgba(174, 88, 249, 0.35),
+        transparent 60%
+      ),
+      radial-gradient(
+        600px circle at right center,
+        rgba(219, 121, 251, 0.35),
+        transparent 60%
+      ),
+      linear-gradient(90deg, #020617, #020617);
+  }
   .text-primary-gradient {
     background: linear-gradient(to right, #ae58f9 0%, #db79fb 100%);
     -webkit-background-clip: text; /* for Safari/Chrome */
