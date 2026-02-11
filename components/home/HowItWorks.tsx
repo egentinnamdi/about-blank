@@ -15,8 +15,8 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <div className="min-h-[50vh] flex flex-col gap-10 lg:gap-5">
-      <div className="lg:p-10 px-5 lg:w-2/5 lg:pl-20 items-center flex flex-col gap-7">
+    <div className="min-h-[50vh] flex flex-col lg:flex-row gap-10 lg:gap-5">
+      <div className="lg:p-10 px-5 lg:w-2/5 lg:pl-20 items-center flex flex-col  gap-7">
         <h2 className="lg:text-6xl text-4xl font-bold ">
           <span className="text-primary-gradient leading-normal">
             Launch in{" "}

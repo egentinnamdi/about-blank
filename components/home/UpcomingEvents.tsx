@@ -74,7 +74,7 @@ export default function UpcomingEvents() {
         You
       </h2>
       <Marquee
-        className=" flex-1 "
+        className=" flex-1 flex gap-6 "
         speed={60}
         direction="left"
         gradient={false}

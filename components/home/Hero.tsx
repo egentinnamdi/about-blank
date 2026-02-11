@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <div className="h-[90vh] relative">
+    <div className="lg:h-screen h-[90vh] relative">
       {/* Image Layer */}
       <div className="absolute inset-0">
         <Image
@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute inset-0 hero-gradient lg:bg-background/60 bg-background/80" />
 
       {/* Text/Content Layer */}
-      <div className="absolute inset-0 flex items-center flex-col justify-center gap-8 lg:gap-0 lg:justify-evenly">
+      <div className="absolute inset-0 flex items-center  pt-20 flex-col justify-center gap-8 lg:gap-0 lg:justify-evenly">
         <div className="bg-background rounded-full text-xs flex items-center gap-2 py-2.5 shadow-sm shadow-primary px-5">
           <Sparkles size={15} className="text-primary" />
           <span>Commission-Free Ticketing</span>
