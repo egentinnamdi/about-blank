@@ -144,6 +144,14 @@
       ),
       linear-gradient(90deg, #020617, #020617);
   }
+  .hero-gradient {
+    background: #ae58f9;
+    background: radial-gradient(
+      circle,
+      rgba(174, 88, 249, 0.532) 0%,
+      rgba(9, 9, 11, 0.183) 51%
+    );
+  }
   .text-primary-gradient {
     background: linear-gradient(to right, #ae58f9 0%, #db79fb 100%);
     -webkit-background-clip: text; /* for Safari/Chrome */

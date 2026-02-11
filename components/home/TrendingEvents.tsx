@@ -54,7 +54,7 @@ const events = [
   {
     image: "event-six.jpg",
     location: "Lekki Phase 1, Lagos",
-    title: "Designers & Developers Connect",
+    title: "Developers Connect",
     details: [
       { label: "Date", value: "28th July 2026" },
       { label: "Duration", value: "6 hours" },
@@ -67,12 +67,12 @@ export default function TrendingEvents() {
   return (
     <div className="min-h-[50vh] flex gap-10 flex-col mt-10">
       <div className="space-y-3">
-        <h2 className="text-4xl font-bold ">Trending Events</h2>
+        <h2 className="lg:text-4xl text-3xl font-bold ">Trending Events</h2>
         <span className="text-gray-400">
           Discover what is happening this week
         </span>
       </div>
-      <div className="flex-1 bg-orange- lg:grid grid-cols-4  gap-5">
+      <div className="flex-1 lg:grid flex flex-col grid-cols-4 gap-10   lg:gap-5">
         {events.map((event) => (
           <EventCard key={event.title} {...event} />
         ))}

@@ -46,11 +46,11 @@ export default function Footer() {
         </div>
       </div>
       <Separator className="bg-white/5 w-5/6! m-auto" />
-      <div className=" flex flex-col lg:flex-row lg:justify-around justify-evenly items-center lg:h-28 h-40 w-full">
+      <div className=" flex flex-col lg:flex-row lg:justify-around justify-center lg:gap-0 gap-5 items-center lg:h-28 h-40 w-full">
         <span className="text-gray-400 lg:text-sm">
           &copy; {new Date().getFullYear()} AboutBlank. All rights reserved.
         </span>
-        <div className="flex items-center gap-2">
+        <div className="flex lg:items-center gap-2">
           <span className="text-xs bg-background border flex items-center gap-1 text-green-500 border-white/5 px-3 rounded-2xl py-2">
             <ShieldCheck size={15} />
             Secure Payment

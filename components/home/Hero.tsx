@@ -19,7 +19,7 @@ export default function Hero() {
         />
       </div>
       {/* Color Layer */}
-      <div className="absolute inset-0 lg:bg-background/60 bg-background/70" />
+      <div className="absolute inset-0 hero-gradient lg:bg-background/60 bg-background/80" />
 
       {/* Text/Content Layer */}
       <div className="absolute inset-0 flex items-center flex-col justify-center gap-8 lg:gap-0 lg:justify-evenly">
