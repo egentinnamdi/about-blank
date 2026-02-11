@@ -17,7 +17,7 @@ export default function EventCard({
   return (
     <div
       className={cn(
-        "lg:w-80 lg:mr-10 lg:min-h-[50vh] min-h-[30vh]  flex flex-col rounded-2xl border relative border-white/10  flex-1  shadow-2xl/20 shadow-primary",
+        "lg:w-80 lg:mr-10 lg:min-h-[50vh] min-h-[30vh]  flex flex-col rounded-2xl border relative border-white/10  flex-1 ",
         isAnimated && "w-72",
       )}
     >

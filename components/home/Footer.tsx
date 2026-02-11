@@ -40,7 +40,10 @@ export default function Footer() {
             Join our newsletter for the latest event updates and organizer tips
           </span>
           <div className="flex gap-5 items-center">
-            <Input className="h-10" placeholder="Enter your email" />
+            <Input
+              className="h-10 placeholder:text-xs placeholder:lg:text-sm"
+              placeholder="Enter your email"
+            />
             <Button className="h-11  bg-primary-gradient">Subscribe</Button>
           </div>
         </div>
