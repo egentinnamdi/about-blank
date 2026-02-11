@@ -72,7 +72,7 @@ export default function TrendingEvents() {
           Discover what is happening this week
         </span>
       </div>
-      <div className="flex-1 lg:grid flex flex-col grid-cols-4 gap-10   lg:gap-5">
+      <div className="flex-1 lg:grid px-3 lg:px-0 flex flex-col grid-cols-4 gap-10   lg:gap-5">
         {events.map((event) => (
           <EventCard key={event.title} {...event} />
         ))}

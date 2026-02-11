@@ -68,7 +68,7 @@ const events = [
 
 export default function UpcomingEvents() {
   return (
-    <div className="min-h-[70vh]  flex lg:gap-12 gap-5 mt-5 items-center  flex-col lg:mt-10 ">
+    <div className="min-h-[70vh]  flex lg:gap-12 gap-3 mt-5 items-center  flex-col lg:mt-10 ">
       <h2 className="lg:text-5xl text-4xl font-semibold lg:text-left text-center leading-normal">
         Upcoming <span className="text-primary-gradient">Events</span> Around
         You
@@ -79,9 +79,9 @@ export default function UpcomingEvents() {
         direction="left"
         gradient={false}
       >
-        <div className="flex space-x-10">
+        <div className="flex gap-6">
           {events.map((event) => (
-            <EventCard key={event.title} {...event} />
+            <EventCard key={event.title} {...event} isAnimated={true} />
           ))}
         </div>
       </Marquee>
