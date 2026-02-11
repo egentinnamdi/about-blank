@@ -12,8 +12,8 @@ export default function EventCard({
   details: { label: string; value: string }[];
 }) {
   return (
-    <div className="lg:w-80 lg:mr-10 min-h-[50vh]  flex flex-col rounded-2xl border relative border-white/10  flex-1  shadow-2xl/20 shadow-primary">
-      <div className="lg:h-3/5 h-72 ">
+    <div className="lg:w-80 lg:mr-10 lg:min-h-[50vh] min-h-[30vh]  flex flex-col rounded-2xl border relative border-white/10  flex-1  shadow-2xl/20 shadow-primary">
+      <div className="lg:h-3/5 h-60 ">
         <Image
           src={`/img/${image}`}
           alt="event"
@@ -23,7 +23,7 @@ export default function EventCard({
           loading="eager"
         />
       </div>
-      <div className="h-2/5 flex flex-col lg:justify-evenly justify-center px-5 gap-3 flex-1  lg:p-5 backdrop-blur-xs  w-full rounded-b-2xl">
+      <div className="lg:h-2/5 h-2/4 flex flex-col lg:justify-evenly justify-center p-5  gap-3 flex-1  lg:p-5 backdrop-blur-xs  w-full rounded-b-2xl">
         <span className="text-sm text-gray-400">{location}</span>
         <h3 className="text-2xl text-primary-gradient font-bold">{title}</h3>
         <div className="">
