@@ -19,15 +19,15 @@ export default function Hero() {
         />
       </div>
       {/* Color Layer */}
-      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 lg:bg-background/60 bg-background/70" />
 
       {/* Text/Content Layer */}
-      <div className="absolute inset-0 flex items-center flex-col   justify-evenly">
+      <div className="absolute inset-0 flex items-center flex-col justify-center gap-8 lg:gap-0 lg:justify-evenly">
         <div className="bg-background rounded-full text-xs flex items-center gap-2 py-2.5 shadow-sm shadow-primary px-5">
           <Sparkles size={15} className="text-primary" />
           <span>Commission-Free Ticketing</span>
         </div>
-        <h2 className="font-black flex flex-col lg:text-8xl text-3xl gap-2 items-center">
+        <h2 className="font-black flex flex-col lg:text-8xl text-4xl gap-2 items-center">
           <span>Built to Empower,</span>
           <TypeAnimation
             sequence={[
@@ -45,12 +45,12 @@ export default function Hero() {
             repeat={Infinity}
           />
         </h2>
-        <p className="text-2xl text-gray-400 font-medium">
+        <p className="lg:text-2xl text-gray-400 text-center w-5/6 text-lg font-medium">
           Power events and manage guests all in one place
         </p>
 
-        <div className="w-1/3 flex flex-col items-center">
-          <div className="font-sans flex gap-5 w-full">
+        <div className="lg:w-1/3 w-5/6 flex flex-col items-center">
+          <div className="font-sans flex flex-col lg:flex-row gap-5 w-full">
             <Button className="bg-primary-gradient shadow-lg shadow-primary/50 text-white h-14 min-w-3/5">
               <span>Start Creating Events</span>
               <ArrowRight />

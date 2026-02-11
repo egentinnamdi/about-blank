@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="mt-20  bg-white/2 grid place-items-center">
       <Separator className="bg-white/5" />
-      <div className="lg:h-96 flex flex-col lg:flex-row lg:w-5/6 px-5 py-10 lg:p-0 gap-10 lg:gap-20 ">
+      <div className="lg:h-96 flex flex-col lg:flex-row lg:w-5/6 px-7 py-10 lg:p-0 lg:gap-20 gap-16 ">
         <div className=" lg:w-2/6 flex flex-col justify-center gap-5">
           <Logo />
           <p className="text-gray-400  leading-loose text-sm">
@@ -16,8 +16,8 @@ export default function Footer() {
             and unforgettable moments for organizers and attendees alike
           </p>
         </div>
-        <div className="bg-orange-400">
-          <div className=" flex flex-col text-sm  text-gray-400 justify-center gap-5">
+        <div className=" flex gap-16 lg:gap-0">
+          <div className=" flex flex-col text-sm  text-gray-400 justify-center lg:gap-5 gap-3">
             <h4 className="text-white font-medium text-lg">Product</h4>
             <span>Features</span>
             <span>Explore Events</span>
@@ -25,7 +25,7 @@ export default function Footer() {
             <span>Pricing</span>
             <span>Organizer Login</span>
           </div>
-          <div className=" flex flex-col text-gray-400 text-sm justify-center gap-5">
+          <div className=" flex flex-col text-gray-400 text-sm justify-center lg:gap-5 gap-3">
             <h4 className="text-white font-medium text-lg">Support</h4>
             <span>Support</span>
             <span>Help Center</span>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div className=" flex-1  lg:w-4/6 flex flex-col justify-center gap-5">
           <h4 className="text-white font-medium text-lg">Stay in the loop</h4>
-          <span className="text-gray-400 text-sm">
+          <span className="text-gray-400 text-sm leading-normal">
             Join our newsletter for the latest event updates and organizer tips
           </span>
           <div className="flex gap-5 items-center">
