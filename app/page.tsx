@@ -17,7 +17,7 @@ export default function Home() {
         {/* <Features /> */}
 
         <EventsDiscoverySection
-          title="More Events for You"
+          title="Events You'll Love"
           description="Events you've shown interest in"
         />
         <PersonalizedSection />

@@ -39,7 +39,7 @@ export default function PersonalizedSection() {
   return (
     <div className="min-h-[40vh] px-4 flex flex-col gap-5">
       <h2 className="text-2xl font-bold flex items-center gap-2">
-        <Flame className="text-primary" size={27} /> Events You&apos;ll Love
+        <Flame className="text-primary" size={27} /> More Events for You
       </h2>
       <div className=" flex-1 flex overflow-x-auto scrollbar-hide overflow-y- py-3 pb-5 gap-7">
         {personalized.map((event) => (
