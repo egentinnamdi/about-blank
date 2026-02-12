@@ -12,12 +12,12 @@ export default function Home() {
     <div className=" min-h-screen">
       <div className="flex flex-col  gap-10 lg:px-10 ">
         <Hero />
-        {/* <TrustedPartners /> */}
+        <TrustedPartners />
         {/* <HowItWorks /> */}
         {/* <Features /> */}
 
         <EventsDiscoverySection
-          title="Continue Exploring"
+          title="More Events for You"
           description="Events you've shown interest in"
         />
         <PersonalizedSection />
