@@ -33,7 +33,7 @@ export default function PersonalizedItem({
               <MapPin className="text-primary" /> {city}
             </span>
           </div>
-          <h3 className="text-xl font-medium">{title}</h3>
+          <h3 className="lg:text-xl text-lg font-medium">{title}</h3>
         </div>
         <Separator className="bg-gray-400" />
         <div className="flex justify-between items-center">
