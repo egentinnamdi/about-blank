@@ -1,22 +1,21 @@
-import { Eye } from "lucide-react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const partners = [
   {
-    logo: <Eye />,
+    image: "google-img.png",
     name: "Google",
   },
   {
-    logo: <Eye />,
+    image: "spotify-img.png",
     name: "Spotify",
   },
   {
-    logo: <Eye />,
+    image: "paypal-img.png",
     name: "Paypal",
   },
   {
-    logo: <Eye />,
+    image: "google-img.png",
     name: "Apple",
   },
 ];
@@ -36,7 +35,15 @@ export default function TrustedPartners() {
             className="w-[25vw] text-xs lg:text-base flex flex-col items-center gap-2 text-gray-400 text-center "
             key={partner.name}
           >
-            {partner.logo}
+            <div className="h-10">
+              <Image
+                src={`/img/${partner.image}`}
+                alt={partner.name}
+                width={400}
+                height={400}
+                className="size-full object-cover"
+              />
+            </div>
             <span>{partner.name}</span>
           </div>
         ))}
