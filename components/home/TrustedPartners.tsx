@@ -22,10 +22,10 @@ const partners = [
 
 export default function TrustedPartners() {
   return (
-    <div className="flex min-h-20 relative flex-col gap-7 lg:gap-10 items-center mb-10">
-      <div className="absolute inset-0 bg-radial  from-background/50 via-background/50 to-background z-10" />
+    <div className="flex min-h-20 relative flex-col gap-8 lg:gap-10 items-center mb-10">
+      <div className="absolute inset-0 bg-radial  from-background/40 via-background/40 to-background z-10" />
 
-      <h3 className="text-gray-300 text-2xl ">Trusted By</h3>
+      <h3 className="text-gray-300 font-medium text-2xl ">Trusted By</h3>
       <Marquee className="flex-1 " speed={60} direction="left" gradient={false}>
         {partners.map((partner) => (
           <div
