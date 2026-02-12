@@ -41,7 +41,7 @@ export default function EventsDiscoverySection({
   description: string;
 }) {
   return (
-    <div className="flex flex-col gap-10 min-h-[50vh]  bg-radial from-primary/15 lg:from-primary/18  via-background to-background">
+    <div className="flex flex-col gap-10 min-h-[50vh] px-4  bg-radial from-primary/15 lg:from-primary/18  via-background to-background">
       <div className="flex flex-col gap-3">
         <h2 className="text-2xl font-bold">{title}</h2>
         <span className="text-gray-400">{description}</span>

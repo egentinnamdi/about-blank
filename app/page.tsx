@@ -10,7 +10,7 @@ import UpcomingEvents from "@/components/home/UpcomingEvents";
 export default function Home() {
   return (
     <div className=" min-h-screen">
-      <div className="flex flex-col  gap-10 lg:px-10 px-4">
+      <div className="flex flex-col  gap-10 lg:px-10 ">
         <Hero />
         {/* <TrustedPartners /> */}
         {/* <HowItWorks /> */}

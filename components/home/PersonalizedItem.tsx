@@ -16,7 +16,7 @@ export default function PersonalizedItem({
 }) {
   return (
     <div className="min-w-3/4 lg:min-w-1/4  border border-white/5 rounded-2xl ">
-      <div className="h-2/4 lg:h-3/5">
+      <div className="h-44 lg:h-3/5">
         <Image
           src={`/img/${image}`}
           alt={title}
@@ -25,7 +25,7 @@ export default function PersonalizedItem({
           height={500}
         />
       </div>
-      <div className="flex pt-5 pb-7 px-4 flex-col gap-7 lg:gap-3 lg:h-2/5">
+      <div className="flex pt-5 pb-4 px-4 lg:pb-7 flex-col h-2/4 gap-4 lg:gap-5 lg:h-2/5">
         <div className=" flex flex-col gap-3">
           <div className="flex justify-between text-gray-400 items-center">
             <span>Event</span>
