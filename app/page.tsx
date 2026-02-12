@@ -12,7 +12,7 @@ export default function Home() {
     <div className=" min-h-screen">
       <div className="flex flex-col  gap-10 lg:px-10 ">
         <Hero />
-        <TrustedPartners />
+        {/* <TrustedPartners /> */}
         {/* <HowItWorks /> */}
         {/* <Features /> */}
 
