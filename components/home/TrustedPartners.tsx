@@ -15,24 +15,21 @@ const partners = [
     name: "Paypal",
   },
   {
-    image: "google-img.png",
-    name: "Apple",
+    image: "visa-img.png",
+    name: "Visa",
   },
 ];
 
 export default function TrustedPartners() {
   return (
-    <div className="flex min-h-20 flex-col gap-7 lg:gap-10 items-center mb-10">
-      <h3 className="text-gray-400 text-2xl ">Trusted By</h3>
-      <Marquee
-        className="flex-1 flex "
-        speed={60}
-        direction="left"
-        gradient={false}
-      >
+    <div className="flex min-h-20 relative flex-col gap-7 lg:gap-10 items-center mb-10">
+      <div className="absolute inset-0 bg-radial  from-background/50 via-background/50 to-background z-10" />
+
+      <h3 className="text-gray-300 text-2xl ">Trusted By</h3>
+      <Marquee className="flex-1 " speed={60} direction="left" gradient={false}>
         {partners.map((partner) => (
           <div
-            className="w-[25vw] text-xs lg:text-base flex flex-col items-center gap-2 text-gray-400 text-center "
+            className="w-[25vw] text-xs lg:text-base flex flex-col items-center gap-2  text-center "
             key={partner.name}
           >
             <div className="h-10">
