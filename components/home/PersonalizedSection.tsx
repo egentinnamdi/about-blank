@@ -1,3 +1,4 @@
+"use client";
 import { Flame } from "lucide-react";
 import PersonalizedItem from "./PersonalizedItem";
 
@@ -40,7 +41,7 @@ export default function PersonalizedSection() {
       <h2 className="text-2xl font-bold flex items-center gap-2">
         <Flame className="text-primary" size={27} /> Events You&apos;ll Love
       </h2>
-      <div className=" flex-1 flex overflow-x-auto overflow-y- py-3 pb-5 gap-7">
+      <div className=" flex-1 flex overflow-x-auto scrollbar-hide overflow-y- py-3 pb-5 gap-7">
         {personalized.map((event) => (
           <PersonalizedItem key={event.title} {...event} />
         ))}

@@ -41,12 +41,12 @@ export default function EventsDiscoverySection({
   description: string;
 }) {
   return (
-    <div className="flex flex-col gap-10 min-h-[50vh]  bg-radial from-primary/15 via-background to-background">
+    <div className="flex flex-col gap-10 min-h-[50vh]  bg-radial from-primary/15 lg:from-primary/18  via-background to-background">
       <div className="flex flex-col gap-3">
         <h2 className="text-2xl font-bold">{title}</h2>
         <span className="text-gray-400">{description}</span>
       </div>
-      <div className="grid grid-cols-2 gap-x-5 gap-y-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-6">
         {events.map((event) => (
           <EventItem key={event.title} {...event} />
         ))}

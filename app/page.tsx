@@ -10,11 +10,12 @@ import UpcomingEvents from "@/components/home/UpcomingEvents";
 export default function Home() {
   return (
     <div className=" min-h-screen">
-      <div className="flex flex-col lg:gap-20 gap-10 lg:px-10 px-4">
+      <div className="flex flex-col  gap-10 lg:px-10 px-4">
         <Hero />
-        <TrustedPartners />
+        {/* <TrustedPartners /> */}
         {/* <HowItWorks /> */}
         {/* <Features /> */}
+
         <EventsDiscoverySection
           title="Continue Exploring"
           description="Events you've shown interest in"
